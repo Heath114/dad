@@ -1,9 +1,8 @@
-//app/layout.js
 import { ProgressProvider } from './components/ProgressProvider';
 import "./globals.css";
 import SmoothScrolling from './components/SmoothScrolling';
 import React from 'react';
-import Script from 'next/script'; // <--- 1. IMPORT SCRIPT COMPONENT
+import Script from 'next/script';
 
 export const metadata = {
   title: { 
@@ -14,9 +13,10 @@ export const metadata = {
   metadataBase: new URL('https://www.newlookjo.com'),
   icons: {
     icon: [
-      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon.ico', rel: 'shortcut icon' }, // Add this first for compatibility
       { url: '/favicon/favicon.ico', rel: 'icon' },
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: '/favicon/apple-touch-icon.png',
     other: [
@@ -43,12 +43,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Make sure to replace GTM-MRLMS7X5 with your actual GTM ID if it's different
   const gtmId = 'GTM-MRLMS7X5'; 
 
   return (
     <html suppressHydrationWarning="true">
       <head>
+        {/* Explicit favicon links for better Google compatibility */}
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -59,38 +64,36 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-      <Script id="ld-org" type="application/ld+json" strategy="afterInteractive">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "NewLookJO",
-        "alternateName": ["New Look JO", "new look jo", "newlookjo", "New Look", "New Look Finishing", "NewLook للتشطيبات"],
-        "url": "https://www.newlookjo.com",
-        "logo": "https://www.newlookjo.com/favicon/android-chrome-192x192.png",
-        "sameAs": [
-          // add your real profiles if you have them:
-          "https://www.facebook.com/profile.php?id=100064126295491",
-          "https://www.instagram.com/newlookjo911/"
-        ]
-      })}
-      </Script>
-    
-      <Script id="ld-site" type="application/ld+json" strategy="afterInteractive">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "NewLookJO",
-        "alternateName": ["New Look JO", "newlookjo", "new look jo", "New Look", "New Look Finishing", "NewLook للتشطيبات"],
-        "url": "https://www.newlookjo.com",
-        "inLanguage": ["en", "ar"],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.newlookjo.com/en?search={query}",
-          "query-input": "required name=query"
-        }
-      })}
-      </Script>
-
+        <Script id="ld-org" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "NewLookJO",
+          "alternateName": ["New Look JO", "new look jo", "newlookjo", "New Look", "New Look Finishing", "NewLook للتشطيبات"],
+          "url": "https://www.newlookjo.com",
+          "logo": "https://www.newlookjo.com/favicon/favicon-32x32.png", // Changed to standard favicon
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=100064126295491",
+            "https://www.instagram.com/newlookjo911/"
+          ]
+        })}
+        </Script>
+      
+        <Script id="ld-site" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "NewLookJO",
+          "alternateName": ["New Look JO", "newlookjo", "new look jo", "New Look", "New Look Finishing", "NewLook للتشطيبات"],
+          "url": "https://www.newlookjo.com",
+          "inLanguage": ["en", "ar"],
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.newlookjo.com/en?search={query}",
+            "query-input": "required name=query"
+          }
+        })}
+        </Script>
       </head>
 
       <body suppressHydrationWarning={true}>
