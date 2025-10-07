@@ -12,7 +12,7 @@ export default function Villa04() {
 
     
   return (
-    <main className="w-full overflow-hidden py-6 sm:py-8 lg:py-10" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+    <main className="w-full overflow-hidden" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <section className="px-4 sm:px-6 lg:px-6 pt-20 sm:pt-32 lg:pt-40 pb-4">
         <h1 className={`font-450 text-start text-2xl sm:text-2xl lg:text-3xl`}>
           {t('projects.villa04.title')}
@@ -21,7 +21,7 @@ export default function Villa04() {
 
       <section className="relative w-full h-[50vh] sm:h-[70vh] lg:h-[100vh]">
         <Image
-          src="/medias/villa/1.png"
+          src="/medias/villa/1.webp"
           alt='Villa04'
           fill
           className="object-cover"

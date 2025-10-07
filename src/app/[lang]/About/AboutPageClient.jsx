@@ -39,7 +39,7 @@ export default function AboutPageClient() {
         {/* Image Section */}
           <section className="max-w-5xl mx-auto px-4 sm:px-6 mb-16 sm:mb-20 lg:mb-24">
             <Image
-              src="/medias/abdounbridge/mm.png"
+              src="/medias/abdounbridge/mm.webp"
               alt={t('about.hero.image_alt')}
               width={1080}
               height={540}
@@ -95,7 +95,7 @@ export default function AboutPageClient() {
 
             {/* Keep your responsive image API as-is to avoid desktop changes */}
             <Image
-              src="/medias/maps.jpg"
+              src="/medias/maps.webp"
               alt={t('about.locations.map_alt')}
               layout="responsive"
               width={700}

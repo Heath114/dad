@@ -19,7 +19,7 @@ export default function RamiHamad() {
                 </p>
                 <section className="max-w-6xl">
                     <Image 
-                        src="/medias/placeholder.png" 
+                        src="/medias/placeholder.webp" 
                         alt="Rami Hamad" 
                         className="mx-auto mb-8" 
                         width={1920} 

@@ -70,20 +70,11 @@ function MaskLoad({ onComplete }) {
         if (once.current) return;
         once.current = true;
         
-        // Reset scroll position before showing content
-        window.scrollTo(0, 0);
-        if (window.lenis) {
-          window.lenis.scrollTo(0, { immediate: true });
-        }
-        
         onComplete?.();
         window.__MASK_ACTIVE__ = false;
         window.dispatchEvent(new CustomEvent('mask:done'));
         
-        // Delay refresh to allow scroll reset
-        setTimeout(() => {
-          requestRefresh();
-        }, 100);
+       requestRefresh();
       }}
     />
   );
@@ -185,7 +176,7 @@ export default function HomePageClient() {
         >
           <Header />
           <Hero />
-          <ContactButton show={contentVisible} />
+          <ContactButton show={contentVisible && maskDone} />
           <StickyFooter />
         </div>
       )}

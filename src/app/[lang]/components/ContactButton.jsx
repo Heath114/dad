@@ -82,19 +82,18 @@ export default function ContactButton({ show }) {
           {/* Floating circle button */}
           <button
             onClick={() => setOpen((v) => !v)}
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-black flex items-center justify-center text-white shadow-lg overflow-hidden" // Added overflow-hidden
+            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-black flex items-center justify-center text-white shadow-lg overflow-hidden"
             aria-label={open ? 'Close contact popup' : 'Open contact popup'}
             >
             <AnimatePresence initial={false} mode="wait">
                 <motion.div
-                // The key is crucial! It tells AnimatePresence that this is a new component.
                 key={open ? 'x-icon' : 'message-icon'}
                 initial={{ opacity: 0, rotate: -90, scale: 0.5 }}
                 animate={{ opacity: 1, rotate: 0, scale: 1 }}
                 exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
                 transition={{ duration: 0.2, ease: 'easeInOut' }}
                 >
-                {open ? <X size={20} /> : <MessageSquare size={20} />}
+                {open ? <X size={18} className="sm:w-5 sm:h-5" /> : <MessageSquare size={18} className="sm:w-5 sm:h-5" />}
                 </motion.div>
             </AnimatePresence>
            </button>
@@ -107,26 +106,25 @@ export default function ContactButton({ show }) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 30 }}
                 transition={{ duration: 0.5 }}
-                // anchor to the inside edge of the button container
-                className={`absolute bottom-20 w-[24rem] max-w-[100vw] rounded-xl shadow-xl bg-white overflow-hidden
+                className={`absolute bottom-16 sm:bottom-20 w-[85vw] sm:w-[22rem] md:w-[24rem] max-w-[calc(100vw-2rem)] rounded-xl shadow-xl bg-white overflow-hidden
                   ${lang === 'ar' ? 'left-0' : 'right-0'}`}
               >
-                <div className="text-center bg-[#2b2b2b] p-8 w-full">
-                    <h1 className="text-white font-semibold text-2xl pb-2">New Look</h1>
-                    <p className="text-gray-400">
+                <div className="text-center bg-[#2b2b2b] p-4 sm:p-6 md:p-8 w-full">
+                    <h1 className="text-white font-semibold text-lg sm:text-xl md:text-2xl pb-1 sm:pb-2">New Look</h1>
+                    <p className="text-gray-400 text-xs sm:text-sm md:text-base">
                         {`${lang === 'ar' ? 'هل لديك مشروع في ذهنك؟ احجز ' : 'Have a project in mind? Book a '}`}
                         <span className="text-green-400 font-semibold">{`${lang === 'ar' ? 'استشارة أولية مجانية' : 'free initial Consultation'}`}</span>
-                        {`${lang === 'ar' ? ' و اكتشف كيف يمكننا مواءمة خدماتنا مع أهدافك.' : ' and explore how we can align our services with your goals.'}`}</p>
+                        {`${lang === 'ar' ? ' واكتشف كيف يمكننا مواءمة خدماتنا مع أهدافك.' : ' and explore how we can align our services with your goals.'}`}</p>
                 </div>
 
-                <div className="p-4 flex flex-col gap-4">
-                  <p className="text-gray-700">
+                <div className="p-3 sm:p-4 flex flex-col gap-3 sm:gap-4">
+                  <p className="text-gray-700 text-xs sm:text-sm md:text-base">
                     {` ${lang === 'ar' ? 'انقر أدناه لجدولة مكالمة مع فريقنا.' : 'Click below to schedule a call with our team.'}`}
                   </p>
                   <div className="flex justify-center">
                   <button
                     onClick={() => router.push(`/${lang}/Contact`)}
-                    className="px-8 py-2 rounded-full bg-[#2b2b2b] text-white hover:bg-green-500 transition-all duration-300"
+                    className="px-6 sm:px-8 py-2 text-sm sm:text-base rounded-full bg-[#2b2b2b] text-white hover:bg-green-500 transition-all duration-300"
                   >
                     {`${lang === 'ar' ? 'طلب استشارة' : 'Request a Consultation'}`}
                   </button>

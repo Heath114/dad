@@ -9,7 +9,7 @@ export default function MasonryGrid() {
         {/* Kitchen Epoxy Image */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/movenpick/1.png"
+            src="/medias/movenpick/1.webp"
             alt="Kitchen Epoxy Flooring"
             fill
             className="object-cover rounded-lg object-top"
@@ -19,7 +19,7 @@ export default function MasonryGrid() {
         {/* Solarium Epoxy Image */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/movenpick/2.png"
+            src="/medias/movenpick/2.webp"
             alt="Solarium Epoxy Coating"
             fill
             className="object-cover rounded-lg"
@@ -29,7 +29,7 @@ export default function MasonryGrid() {
         {/* Rooftop Membrane Image */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/movenpick/3.png"
+            src="/medias/movenpick/3.webp"
             alt="Rooftop Waterproofing"
             fill
             className="object-cover rounded-lg"
@@ -39,7 +39,7 @@ export default function MasonryGrid() {
         {/* Plant Containers Image */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/movenpick/4.png"
+            src="/medias/movenpick/4.webp"
             alt="Waterproofed Plant Containers"
             fill
             className="object-cover rounded-lg"
@@ -52,7 +52,7 @@ export default function MasonryGrid() {
         {/* Kitchen Epoxy Image */}
         <div className="relative">
           <Image
-            src="/medias/movenpick/1.png"
+            src="/medias/movenpick/1.webp"
             alt="Kitchen Epoxy Flooring"
             fill
             className="object-cover rounded-lg"
@@ -62,7 +62,7 @@ export default function MasonryGrid() {
         {/* Solarium Epoxy Image */}
         <div className="relative">
           <Image
-            src="/medias/movenpick/2.png"
+            src="/medias/movenpick/2.webp"
             alt="Solarium Epoxy Coating"
             fill
             className="object-cover rounded-lg"
@@ -72,7 +72,7 @@ export default function MasonryGrid() {
         {/* Rooftop Membrane Image */}
         <div className="relative">
           <Image
-            src="/medias/movenpick/3.png"
+            src="/medias/movenpick/3.webp"
             alt="Rooftop Waterproofing"
             fill
             className="object-cover rounded-lg"
@@ -82,7 +82,7 @@ export default function MasonryGrid() {
         {/* Plant Containers Image */}
         <div className="relative">
           <Image
-            src="/medias/movenpick/4.png"
+            src="/medias/movenpick/4.webp"
             alt="Waterproofed Plant Containers"
             fill
             className="object-cover rounded-lg"
@@ -95,7 +95,7 @@ export default function MasonryGrid() {
         {/* Kitchen Epoxy - wider */}
         <div className="col-span-5 relative">
           <Image
-            src="/medias/movenpick/1.png"
+            src="/medias/movenpick/1.webp"
             alt="Kitchen Epoxy Flooring"
             fill
             className="object-cover rounded-lg object-bottom"
@@ -105,7 +105,7 @@ export default function MasonryGrid() {
         {/* Solarium Epoxy */}
         <div className="col-span-7 relative">
           <Image
-            src="/medias/movenpick/2.png"
+            src="/medias/movenpick/2.webp"
             alt="Solarium Epoxy Coating"
             fill
             className="object-cover rounded-lg object-bottom"
@@ -115,7 +115,7 @@ export default function MasonryGrid() {
         {/* Rooftop Membrane */}
         <div className="col-span-7 relative">
           <Image
-            src="/medias/movenpick/3.png"
+            src="/medias/movenpick/3.webp"
             alt="Rooftop Waterproofing"
             fill
             className="object-cover rounded-lg object-bottom"
@@ -125,7 +125,7 @@ export default function MasonryGrid() {
         {/* Plant Containers - takes the rest */}
         <div className="col-span-5 relative">
           <Image
-            src="/medias/movenpick/4.png"
+            src="/medias/movenpick/4.webp"
             alt="Waterproofed Plant Containers"
             fill
             className="object-cover rounded-lg object-bottom"

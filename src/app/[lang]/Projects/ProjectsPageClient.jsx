@@ -18,58 +18,58 @@ export default function ProjectsPageClient() {
   const projects = [
   
   {
-    src: '/medias/movenpick/Movenpick.png',
-    blueprint: '/medias/movenpick/blue.png', 
+    src: '/medias/movenpick/Movenpick.webp',
+    blueprint: '/medias/movenpick/blue.webp', 
     link: `/${lang}/Projects/Movenpick`,
     category: { en: ['flooring'], ar: ['مشاريع الأرضيات'] },
     name: { en: 'Mövenpick Hotel', ar: 'فندق موفنبيك' }
   },
   {
-    src: '/medias/abdounbridge/bb (2).jpg',
-    blueprint: '/medias/abdounbridge/bb (2).jpg', 
+    src: '/medias/abdounbridge/bb (2).webp',
+    blueprint: '/medias/abdounbridge/bb (2).webp', 
     link: `/${lang}/Projects/AbdounBridge`,
     category: { en: ['surface finishing', 'legacy'], ar: ['مشاريع التشطيبات', 'المشاريع المميزة'] },
     name: { en: 'Abdoun Bridge', ar: 'جسر عبدون' }
   },
   {
-    src: '/medias/safeway/11.png',
-    blueprint: '/medias/safeway/blue.png',
+    src: '/medias/safeway/11.webp',
+    blueprint: '/medias/safeway/blue.webp',
     link: `/${lang}/Projects/Safeway`,
     category: { en: ['flooring'], ar: ['مشاريع الأرضيات'] },
     name: { en: 'Safeway Center', ar: 'أسواق السيفوي' }
   },
  
   { 
-    src: '/medias/tag/2.png',
-    blueprint: '/medias/tag/blue.png',
+    src: '/medias/tag/2.webp',
+    blueprint: '/medias/tag/blue.webp',
     link: `/${lang}/Projects/TAG`,
     category: { en: ['surface finishing'], ar: ['مشاريع التشطيبات'] },
     name: { en: 'Talal Abu Ghazaleh Group', ar: 'مجموعة طلال أبو غزالة' }
   },
   {
-    src: '/medias/tower/1.png',
-    blueprint: '/medias/tower/blue.png', 
+    src: '/medias/tower/1.webp',
+    blueprint: '/medias/tower/blue.webp', 
     link: `/${lang}/Projects/BusinessParkTower`,
     category: { en: ['flooring', 'legacy', 'surface finishing'], ar: ['مشاريع الأرضيات', 'المشاريع المميزة', 'مشاريع التشطيبات'] },
     name: { en: 'Business Park Tower', ar: 'برج مجمع المشاريع' }
   },
   { 
-    src: '/medias/villa/1.png', 
-    blueprint: '/medias/villa/blue.png', 
+    src: '/medias/villa/1.webp', 
+    blueprint: '/medias/villa/blue.webp', 
     link: `/${lang}/Projects/Villa04`, 
     category: { en: ['surface finishing'], ar: ['مشاريع التشطيبات'] },
     name: { en: 'Villa 04', ar: 'ڤيلا عميش' }
   },
   {
-    src: '/medias/ncc/1.png',
-    blueprint: '/medias/ncc/blue.png', 
+    src: '/medias/ncc/1.webp',
+    blueprint: '/medias/ncc/blue.webp', 
     link: `/${lang}/Projects/NCC`,
     category: { en: ['surface finishing'], ar: ['مشاريع التشطيبات'] },
     name: { en: 'Northern Cement Company', ar: 'شركة اسمنت الشمالية' }
   },
   {
-    src: '/medias/ex/3.png',
-    blueprint: '/medias/ex/blue.png',
+    src: '/medias/ex/3.webp',
+    blueprint: '/medias/ex/blue.webp',
     link: `/${lang}/Projects/Expeditors`,
     category: { en: ['flooring'], ar: ['مشاريع الأرضيات'] },
     name: { en: 'Expeditors', ar: 'Expeditors' }

@@ -2,58 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 /* globals.css*/
-@font-face {
-  font-family: 'Kontora SemiBold';
-  src: url('/fonts/kontora-semibold.otf') format('opentype');
-  font-display: swap;
-  font-weight: 600;
-}
 
-@font-face {
-  font-family: 'Lufga';
-  src: url('/fonts/LufgaThin.ttf') format('truetype');
-  font-display: swap;
-  font-weight: 100;
-}
+/* Fonts are now loaded via fonts.js using Next.js localFont */
+/* CSS variables: --font-lufga, --font-lufga-more, --font-kontora */
 
-@font-face {
-  font-family: 'Lufga';
-  src: url('/fonts/LufgaLight.ttf') format('truetype');
-  font-display: swap;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: 'Lufga';
-  src: url('/fonts/LufgaRegular.ttf') format('truetype');
-  font-display: swap;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Lufga';
-  src: url('/fonts/LufgaMedium.ttf') format('truetype');
-  font-display: swap;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Lufga';
-  src: url('/fonts/LufgaSemiBold.ttf') format('truetype');
-  font-display: swap;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Lufga';
-  src: url('/fonts/LufgaExtraBold.ttf') format('truetype');
-  font-display: swap;
-  font-weight: 800;
-}
 body {
-  font-family: 'Lufga', 'Inter', sans-serif;
+  font-family: var(--font-lufga), 'Arial', sans-serif;
   margin: 0;
   overflow-x: hidden;
+}
+
+:lang(ar) {
+  font-family: sans-serif, 'Segoe UI', 'Tahoma', 'Traditional Arabic', 'Arial';
 }
 
 /* lock both axes */

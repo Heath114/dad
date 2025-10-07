@@ -29,7 +29,7 @@
       onClick={() => router.push('/Projects/AbdounBridge')}
     >
       <Image
-        src="/medias/placeholder.png"
+        src="/medias/placeholder.webp"
         fill={true}
         alt="Project Preview"
         ref={imageRef3}
@@ -61,7 +61,7 @@
       onClick={() => router.push('/Projects/Movenpick')}
     >
       <Image
-        src="/medias/placeholder.png"
+        src="/medias/placeholder.webp"
         fill={true}
         alt="Project Preview"
         ref={imageRef4}
@@ -93,7 +93,7 @@
       onClick={() => router.push('/Projects/Villa-01')}
     >
       <Image
-        src="/medias/placeholder.png"
+        src="/medias/placeholder.webp"
         fill={true}
         alt="Project Preview"
         ref={imageRef5}

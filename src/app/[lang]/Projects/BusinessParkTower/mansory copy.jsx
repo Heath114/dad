@@ -9,7 +9,7 @@ export default function MasonryGrid2() {
         {/* Image 1 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/tower/5.png"
+            src="/medias/tower/5.webp"
             alt="Image 1"
             fill
             className="object-cover rounded-lg"
@@ -19,7 +19,7 @@ export default function MasonryGrid2() {
         {/* Image 2 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/tower/6.png"
+            src="/medias/tower/6.webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -32,7 +32,7 @@ export default function MasonryGrid2() {
         {/* Image 1 */}
         <div className="relative h-[300px]">
           <Image
-            src="/medias/tower/5.png"
+            src="/medias/tower/5.webp"
             alt="Image 1"
             fill
             className="object-cover rounded-lg"
@@ -42,7 +42,7 @@ export default function MasonryGrid2() {
         {/* Image 2 */}
         <div className="relative h-[300px]">
           <Image
-            src="/medias/tower/6.png"
+            src="/medias/tower/6.webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -55,7 +55,7 @@ export default function MasonryGrid2() {
         {/* Image 1 */}
         <div className="col-span-6 relative">
           <Image
-            src="/medias/tower/5.png"
+            src="/medias/tower/5.webp"
             alt="Image 1"
             fill
             className="object-cover rounded-lg"
@@ -65,7 +65,7 @@ export default function MasonryGrid2() {
         {/* Image 2 */}
         <div className="col-span-6 relative">
           <Image
-            src="/medias/tower/6.png"
+            src="/medias/tower/6.webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"

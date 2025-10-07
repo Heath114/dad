@@ -44,22 +44,23 @@ export default function Hero(){
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="h-screen w-full relative overflow-hidden">
                 <Image
-                src="/medias/abdounbridge/ss.png"
+                src="/medias/abdounbridge/ss.webp"
                 fill={true}
                 alt="Hero Image"
                 className="object-cover"
+                priority
                 />
             </div>
+
             </div>
             {/* Hero Section */}
-                <div className="py-32 text-left sm:py-20 md:py-24 lg:py-32 xl:py-36 2xl:py-48 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+                <div className="py-32 text-left sm:py-20 md:py-24 lg:py-32 xl:py-36 2xl:py-52 flex items-center justify-center px-4 sm:px-6 lg:px-8">
                     <div className="max-w-full sm:max-w-4xl lg:max-w-6xl mx-auto text-center">
-                        <h1 className={`font-semibold leading-tight text-gray-800 `}
+                        <h1 className={`font-semibold leading-tight text-gray-800`}
                               style={{ fontSize: "clamp(1.15rem, 2vw + 0.5rem, 2rem)" }}
->
+                        >
                             {t('heroPage.lead')} 
                         </h1>
-
                         <h2 className="font-semibold text-gray-800 mb-8 sm:mb-10 lg:leading-relaxed lg:mb-12 max-w-full sm:max-w-3xl lg:max-w-4xl mx-auto"
                         style={{ fontSize: "clamp(1.15rem, 2vw + 0.5rem, 2rem)" }}>
                             <Trans
@@ -67,7 +68,6 @@ export default function Hero(){
                                 i18nKey="heroPage.bridgeLine1"
                                 components={{
                                             br: <br />,
-
                                     bridgeLink: (
                                         <Link  className="text-blue-600 font-bold underline decoration-1 cursor-pointer underline-offset-8 hover:text-blue-400 transition-colors" href={`/${lang}/Projects/AbdounBridge`}>
                                             <span />
@@ -123,7 +123,7 @@ export default function Hero(){
                 >
                     <Image
                         ref={imageRef1}
-                        src="/medias/abdounbridge/111.png"
+                        src="/medias/abdounbridge/111.webp"
                         alt="Protective Coatings"
                         fill={true}
                         sizes="(max-width: 1023px) 100vw, 960px"
@@ -173,7 +173,7 @@ export default function Hero(){
                 >
                     <Image
                         ref={imageRef2}
-                        src="/medias/ex/1.png"
+                        src="/medias/ex/1.webp"
                         alt="Epoxy Solutions"
                         fill={true}
                         sizes="(max-width: 1023px) 100vw, 960px"
@@ -253,7 +253,7 @@ export default function Hero(){
                     >
                     <Image
                         ref={imageRef3}
-                        src="/medias/movenpick/2.png"
+                        src="/medias/movenpick/2.webp"
                         alt="New Look Team"
                         fill={true}
                         sizes="(max-width: 1023px) 100vw, 960px"
@@ -308,7 +308,7 @@ export default function Hero(){
                 >
                     <Image
                         ref={imageRef4}
-                        src="/medias/s.png"
+                        src="/medias/s.webp"
                         alt="New Look Team"
                         fill={true}
                         sizes="(max-width: 1023px) 100vw, 960px"
@@ -393,7 +393,7 @@ export default function Hero(){
                     className="block w-full h-full relative"
                     >
                     <Image
-                        src="/medias/partner/vetonit.png"
+                        src="/medias/partner/vetonit.webp"
                         alt="Saveto Vetonit"
                         fill
                         sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -414,7 +414,7 @@ export default function Hero(){
                         className="block w-full h-full relative"
                         >
                         <Image
-                            src="/medias/partner/sipes.png"
+                            src="/medias/partner/sipes.webp"
                             alt="Sipes"
                             fill
                             sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -456,7 +456,7 @@ export default function Hero(){
                         className="block w-full h-full relative"
                         >
                         <Image
-                            src="/medias/partner/laticrete.png"
+                            src="/medias/partner/laticrete.webp"
                             alt="Laticrete"
                             fill
                             sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -496,7 +496,7 @@ export default function Hero(){
                         className="block w-full relative h-full"
                         >
                         <Image
-                            src="/medias/partner/basf.png"
+                            src="/medias/partner/basf.webp"
                             alt="BASF"
                             fill
                             sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -517,7 +517,7 @@ export default function Hero(){
                         className="block relative w-full h-full"
                         >
                         <Image
-                            src="/medias/partner/mapei.png"
+                            src="/medias/partner/mapei.webp"
                             alt="MAPEI"
                             fill
                             sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -537,7 +537,7 @@ export default function Hero(){
                     className="relative block w-full h-full"
                     >
                     <Image
-                        src="/medias/partner/tag.jpg"
+                        src="/medias/partner/tag.webp"
                         alt="Talal Abu Ghazaleh & Co."
                         fill
                         sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -557,7 +557,7 @@ export default function Hero(){
                     className="relative block w-full h-full"
                     >
                     <Image
-                        src="/medias/partner/lama.png"
+                        src="/medias/partner/lama.webp"
                         alt="LAMA"
                         fill
                         sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -577,7 +577,7 @@ export default function Hero(){
                     className="relative block w-full h-full"
                     >
                     <Image
-                        src="/medias/partner/ikk.png"
+                        src="/medias/partner/ikk.webp"
                         alt="Isam Khairi Kabbani Group"
                         fill
                         sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"
@@ -597,7 +597,7 @@ export default function Hero(){
                         className="relative block w-full h-full"
                         >
                         <Image
-                            src="/medias/partner/sapac.png"
+                            src="/medias/partner/sapac.webp"
                             alt="SAPAC"
                             fill
                             sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 25vw"

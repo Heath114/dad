@@ -1,8 +1,10 @@
+// dad/src/app/layout.js
 import { ProgressProvider } from './components/ProgressProvider';
 import "./globals.css";
 import SmoothScrolling from './components/SmoothScrolling';
 import React from 'react';
 import Script from 'next/script';
+import { lufgaCore, lufgaMore, kontora } from "./fonts";
 
 export const metadata = {
   title: { 
@@ -46,7 +48,7 @@ export default function RootLayout({ children }) {
   const gtmId = 'GTM-MRLMS7X5'; 
 
   return (
-    <html suppressHydrationWarning="true">
+    <html suppressHydrationWarning="true" className={`${lufgaCore.variable} ${lufgaMore.variable} ${kontora.variable}`}>
       <head>
         {/* Explicit favicon links for better Google compatibility */}
         <link rel="icon" href="/favicon.ico" sizes="any" />

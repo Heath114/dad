@@ -25,7 +25,7 @@ export default function SurfaceFinishing() {
       {/* HERO */}
       <div className="relative w-full h-[100vh] sm:h-[50vh] lg:h-[100vh] overflow-hidden">
         <Image
-          src="/medias/movenpick/4.png"
+          src="/medias/movenpick/4.webp"
           alt={t('services.surface_finishing_page.hero_alt')}
           fill
           sizes="100vw"
@@ -118,7 +118,7 @@ export default function SurfaceFinishing() {
           <div className="absolute inset-0 bg-gray-800">
             <div
               className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style={{ backgroundImage: "url('/medias/tower/2.png')" }}
+              style={{ backgroundImage: "url('/medias/tower/2.webp')" }}
             />
           </div>
 
@@ -179,7 +179,7 @@ export default function SurfaceFinishing() {
           <div className="absolute inset-0 bg-gray-200">
             <div
               className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style={{ backgroundImage: "url('/medias/ncc/3.png')" }}
+              style={{ backgroundImage: "url('/medias/ncc/3.webp')" }}
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300" />
 
@@ -305,7 +305,7 @@ export default function SurfaceFinishing() {
             onClick={() => router.push(`/${lang}/Projects/AbdounBridge`)}
           >
             <Image
-              src="/medias/abdounbridge/mm.png"
+              src="/medias/abdounbridge/mm.webp"
               fill
               sizes="(max-width: 640px) 100vw, 33vw"
               alt="Project Preview"
@@ -356,7 +356,7 @@ export default function SurfaceFinishing() {
             onClick={() => router.push(`/${lang}/Projects/NCC`)}
           >
             <Image
-              src="/medias/ncc/1.png"
+              src="/medias/ncc/1.webp"
               fill
               sizes="(max-width: 640px) 100vw, 33vw"
               alt="Project Preview"
@@ -407,7 +407,7 @@ export default function SurfaceFinishing() {
             onClick={() => router.push(`/${lang}/Projects/Villa04`)}
           >
             <Image
-              src="/medias/villa/1.png"
+              src="/medias/villa/1.webp"
               fill
               sizes="(max-width: 640px) 100vw, 33vw"
               alt="Project Preview"

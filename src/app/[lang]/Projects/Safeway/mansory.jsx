@@ -9,7 +9,7 @@ export default function MasonryGrid() {
         {/* Large-Scale Warehouse Image */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/safeway/2.png"
+            src="/medias/safeway/2.webp"
             alt="Large-Scale Epoxy Flooring - Warehouse"
             fill
             className="object-cover rounded-lg"
@@ -19,7 +19,7 @@ export default function MasonryGrid() {
         {/* Process/Application Image */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/safeway/21.png"
+            src="/medias/safeway/21.webp"
             alt="Epoxy Application Process"
             fill
             className="object-cover rounded-lg"
@@ -32,7 +32,7 @@ export default function MasonryGrid() {
         {/* Large-Scale Warehouse Image */}
         <div className="relative">
           <Image
-            src="/medias/safeway/2.png"
+            src="/medias/safeway/2.webp"
             alt="Large-Scale Epoxy Flooring - Warehouse"
             fill
             className="object-cover rounded-lg"
@@ -42,7 +42,7 @@ export default function MasonryGrid() {
         {/* Process/Application Image */}
         <div className="relative">
           <Image
-            src="/medias/safeway/21.png"
+            src="/medias/safeway/21.webp"
             alt="Epoxy Application Process"
             fill
             className="object-cover rounded-lg"
@@ -55,7 +55,7 @@ export default function MasonryGrid() {
         {/* Large-Scale Warehouse - wider */}
         <div className="col-span-7 relative">
           <Image
-            src="/medias/safeway/2.png"
+            src="/medias/safeway/2.webp"
             alt="Large-Scale Epoxy Flooring - Warehouse"
             fill
             className="object-cover rounded-lg"
@@ -65,7 +65,7 @@ export default function MasonryGrid() {
         {/* Process/Application - narrower */}
         <div className="col-span-5 relative">
           <Image
-            src="/medias/safeway/21.png"
+            src="/medias/safeway/21.webp"
             alt="Epoxy Application Process"
             fill
             className="object-cover rounded-lg"

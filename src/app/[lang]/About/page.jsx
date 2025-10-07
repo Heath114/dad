@@ -5,7 +5,7 @@ export default function About() {
   return <AboutPageClient />;
 }
 export async function generateMetadata({ params }) {
-    const { lang } = params;
+    const { lang } = await params;
     const isEnglish = lang === 'en';
   
     return {

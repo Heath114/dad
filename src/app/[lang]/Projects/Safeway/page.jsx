@@ -11,7 +11,7 @@ export default function Safeway() {
   const { lang } = useParams();
 
   return (
-    <main className="w-full overflow-hidden py-6 sm:py-8 lg:py-10" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+    <main className="w-full overflow-hidden" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <section className="px-4 sm:px-6 pt-24 sm:pt-32 lg:pt-40 pb-3 sm:pb-4">
         <h1 className={`font-450 text-start ${lang === 'ar' ? 'text-3xl sm:text-4xl lg:text-5xl' : 'text-2xl sm:text-3xl lg:text-4xl'}`}>
           {t('projects.safeway.title')}
@@ -20,7 +20,7 @@ export default function Safeway() {
 
       <section className="relative w-full h-[50vh] sm:h-[70vh] lg:h-[100vh]">
         <Image
-          src="/medias/safeway/11.png"
+          src="/medias/safeway/11.webp"
           alt={t('projects.safeway.hero_alt')}
           fill
           className="object-cover"

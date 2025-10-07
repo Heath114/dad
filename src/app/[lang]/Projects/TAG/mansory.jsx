@@ -19,7 +19,7 @@ export default function MasonryGrid() {
         {/* Image 2 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/tag/3..png"
+            src="/medias/tag/3..webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -29,7 +29,7 @@ export default function MasonryGrid() {
         {/* Image 3 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/tag/4.png"
+            src="/medias/tag/4.webp"
             alt="Image 3"
             fill
             className="object-cover rounded-lg"
@@ -39,7 +39,7 @@ export default function MasonryGrid() {
         {/* Image 4 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/tag/5.png"
+            src="/medias/tag/5.webp"
             alt="Image 4"
             fill
             className="object-cover rounded-lg"
@@ -62,7 +62,7 @@ export default function MasonryGrid() {
         {/* Image 2 */}
         <div className="relative h-[300px]">
           <Image
-            src="/medias/tag/3..png"
+            src="/medias/tag/3..webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -72,7 +72,7 @@ export default function MasonryGrid() {
         {/* Image 3 */}
         <div className="relative h-[300px]">
           <Image
-            src="/medias/tag/4.png"
+            src="/medias/tag/4.webp"
             alt="Image 3"
             fill
             className="object-cover rounded-lg"
@@ -82,7 +82,7 @@ export default function MasonryGrid() {
         {/* Image 4 */}
         <div className="relative h-[300px]">
           <Image
-            src="/medias/tag/5.png"
+            src="/medias/tag/5.webp"
             alt="Image 4"
             fill
             className="object-cover rounded-lg"
@@ -105,7 +105,7 @@ export default function MasonryGrid() {
         {/* Image 2 */}
         <div className="col-span-7 relative">
           <Image
-            src="/medias/tag/3..png"
+            src="/medias/tag/3..webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -115,7 +115,7 @@ export default function MasonryGrid() {
         {/* Image 3 */}
         <div className="col-span-8 relative">
           <Image
-            src="/medias/tag/4.png"
+            src="/medias/tag/4.webp"
             alt="Image 3"
             fill
             className="object-cover rounded-lg"
@@ -125,7 +125,7 @@ export default function MasonryGrid() {
         {/* Image 4 - takes the rest */}
         <div className="col-span-4 relative">
           <Image
-            src="/medias/tag/5.png"
+            src="/medias/tag/5.webp"
             alt="Image 4"
             fill
             className="object-cover rounded-lg"

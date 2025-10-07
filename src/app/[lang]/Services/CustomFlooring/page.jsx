@@ -24,7 +24,7 @@ export default function CustomFlooring() {
       {/* HERO */}
       <div className="relative w-full h-[100vh] sm:h-[50vh] lg:h-[100vh] overflow-hidden">
         <Image
-          src="/medias/safeway/2.png"
+          src="/medias/safeway/2.webp"
           alt={t('services.custom_flooring_page.hero_alt')}
           fill
           sizes="100vw"
@@ -172,7 +172,7 @@ export default function CustomFlooring() {
           <div className="absolute inset-0 bg-gray-200">
             <div
               className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-              style={{ backgroundImage: "url('/medias/8.png')" }}
+              style={{ backgroundImage: "url('/medias/8.webp')" }}
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300" />
           </div>
@@ -289,7 +289,7 @@ export default function CustomFlooring() {
             onClick={() => router.push(`/${lang}/Projects/Safeway`)}
           >
             <Image
-              src="/medias/safeway/11.png"
+              src="/medias/safeway/11.webp"
               fill
               sizes="(max-width: 640px) 100vw, 33vw"
               alt={t('services.custom_flooring_page.card_alt')}
@@ -340,7 +340,7 @@ export default function CustomFlooring() {
             onClick={() => router.push(`/${lang}/Projects/Movenpick`)}
           >
             <Image
-              src="/medias/movenpick/Movenpick.png"
+              src="/medias/movenpick/Movenpick.webp"
               fill
               sizes="(max-width: 640px) 100vw, 33vw"
               alt={t('services.custom_flooring_page.card_alt')}
@@ -391,7 +391,7 @@ export default function CustomFlooring() {
             onClick={() => router.push(`/${lang}/Projects/Expeditors`)}
           >
             <Image
-              src="/medias/ex/3.png"
+              src="/medias/ex/3.webp"
               fill
               sizes="(max-width: 640px) 100vw, 33vw"
               alt={t('services.custom_flooring_page.card_alt')}

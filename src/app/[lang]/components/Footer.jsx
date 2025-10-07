@@ -65,10 +65,10 @@ function MobileFooter() {
 
         {/* Socials — now vertical */}
       <div className="flex gap-4 text-gray-300">
-        <Image src="/icons/facebook.png" alt="Facebook" width={30} height={30} />
-        <Image src="/icons/instagram.png" alt="Instagram" width={30} height={30} />
-        <Image src="/icons/linkedin.png" alt="LinkedIn" width={30} height={30} />
-        <Image src="/icons/twitter.png" alt="Twitter" width={30} height={30} />
+        <Image src="/icons/facebook.webp" alt="Facebook" width={30} height={30} />
+        <Image src="/icons/instagram.webp" alt="Instagram" width={30} height={30} />
+        <Image src="/icons/linkedin.webp" alt="LinkedIn" width={30} height={30} />
+        <Image src="/icons/twitter.webp" alt="Twitter" width={30} height={30} />
       </div>
 
       {/* Huge brand */}
@@ -222,16 +222,16 @@ function FooterBottom() {
         <div className={`${lang === 'ar' ? 'text-left' : 'text-right'} w-full md:w-auto flex-shrink-0`}>
           <div className={`flex gap-3 md:gap-4 mb-2 md:mb-4 ${lang === 'ar' ? 'justify-start' : 'justify-end'}`}>
             <Link href="https://www.instagram.com/newlookjo911/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-              <img src="/icons/instagram.png" alt="Instagram" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+              <img src="/icons/instagram.webp" alt="Instagram" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
             </Link>
             <Link href="https://www.facebook.com/profile.php?id=100064126295491" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-              <img src="/icons/facebook.png" alt="Facebook" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+              <img src="/icons/facebook.webp" alt="Facebook" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
             </Link>
             <Link href="https://x.com/NewLook_jo" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-              <img src="/icons/twitter.png" alt="Twitter" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+              <img src="/icons/twitter.webp" alt="Twitter" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
             </Link>
             <Link href="#" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-              <img src="/icons/linkedin.png" alt="LinkedIn" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+              <img src="/icons/linkedin.webp" alt="LinkedIn" className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
             </Link>
           </div>
 

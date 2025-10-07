@@ -26,7 +26,7 @@ export default function ServicesPageClient() {
           /* single-column: full viewport (iOS-safe), minus header for the first tile */
           min-h-screen min-h-[100svh]
           md:h-full                                /* in 2-col layout, fill the row height */
-          bg-[url('/medias/tower/3.png')] bg-cover bg-center
+          bg-[url('/medias/tower/3.webp')] bg-cover bg-center
         "
         style={{ minHeight: 'calc(100svh - var(--header-h))' }}
       >
@@ -49,7 +49,7 @@ export default function ServicesPageClient() {
           /* single-column: full viewport (no header subtraction needed) */
           min-h-screen min-h-[100svh]
           md:h-full
-          bg-[url('/medias/abdounbridge/bbb.png')] bg-cover
+          bg-[url('/medias/abdounbridge/bbb.webp')] bg-cover
           bg-[position:center_28%] md:bg-[position:center_20%] xl:bg-center  /* crop tuning */
         "
       >

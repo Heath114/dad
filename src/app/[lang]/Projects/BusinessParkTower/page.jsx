@@ -21,7 +21,7 @@ export default function BusinessParkTower() {
 
       <section className="relative w-full h-[50vh] sm:h-[70vh] lg:h-[100vh]">
         <Image
-          src="/medias/tower/1.png"
+          src="/medias/tower/1.webp"
           alt={t('projects.businessParkTower.hero_alt')}
           fill
           className="object-cover object-top"

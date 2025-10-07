@@ -9,7 +9,7 @@ export default function MasonryGrid() {
         {/* Image 1 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/villa/3.png"
+            src="/medias/villa/3.webp"
             alt="Image 1"
             fill
             className="object-cover rounded-lg"
@@ -19,7 +19,7 @@ export default function MasonryGrid() {
         {/* Image 2 */}
         <div className="relative h-[250px]">
           <Image
-            src="/medias/villa/111.png"
+            src="/medias/villa/111.webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -32,7 +32,7 @@ export default function MasonryGrid() {
         {/* Image 1 */}
         <div className="relative">
           <Image
-            src="/medias/villa/3.png"
+            src="/medias/villa/3.webp"
             alt="Image 1"
             fill
             className="object-cover rounded-lg"
@@ -42,7 +42,7 @@ export default function MasonryGrid() {
         {/* Image 2 */}
         <div className="relative">
           <Image
-            src="/medias/villa/111.png"
+            src="/medias/villa/111.webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
@@ -55,7 +55,7 @@ export default function MasonryGrid() {
         {/* Image 1 - wider */}
         <div className="col-span-5 relative">
           <Image
-            src="/medias/villa/3.png"
+            src="/medias/villa/3.webp"
             alt="Image 1"
             fill
             className="object-cover rounded-lg"
@@ -65,7 +65,7 @@ export default function MasonryGrid() {
         {/* Image 2 */}
         <div className="col-span-7 relative">
           <Image
-            src="/medias/villa/111.png"
+            src="/medias/villa/111.webp"
             alt="Image 2"
             fill
             className="object-cover rounded-lg"
