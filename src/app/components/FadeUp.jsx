@@ -12,27 +12,29 @@ const FadeUp = ({
   ...props
 }) => {
   const variants = {
-    initial: { opacity: 0, y: distance, pointerEvents: 'none' }, // 👈 no clicks while hidden
-    animate: {
+    hidden: { 
+      opacity: 0, 
+      y: distance, 
+      pointerEvents: 'none' 
+    },
+    visible: {
       opacity: 1,
       y: 0,
       pointerEvents: 'auto',
-      transition: { duration, delay: 1.6 + delay, ease: 'easeOut' }
-    },
-    exit: {
-      opacity: 0,
-      y: -8,
-      pointerEvents: 'none',
-      transition: { duration: exitDuration, ease: 'easeInOut', delay: 0 }
+      transition: { 
+        duration, 
+        delay: 0.4 + delay,
+        ease: 'easeOut' 
+      }
     }
   };
 
   return (
     <motion.div
       variants={variants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }} // Triggers 100px before element enters viewport
       className={className}
       {...props}
     >

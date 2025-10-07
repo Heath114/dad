@@ -34,6 +34,7 @@ function Contact({ onScheduleClick }) {
   };
 
   return (
+    <FadeUp delay={0} distance={40}>
       <div className="py-16 sm:py-24 md:py-40 lg:py-40" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
         <div className="container mx-auto px-4 py-6 sm:py-8 flex flex-col items-center">
           <h1 className={`font-bold text-center mb-6 sm:mb-8 ${lang === 'ar' ? 'text-2xl sm:text-3xl lg:text-3xl 2xl:text-4xl' : 'text-2xl sm:text-3xl lg:text-3xl 2xl:text-4xl'}`}>
@@ -93,6 +94,7 @@ function Contact({ onScheduleClick }) {
           </div>
         </div>
       </div>
+    </FadeUp>
   );
 }
 
@@ -306,6 +308,7 @@ function ContactForm({ prefillType }) {
   };
 
   return (
+    <FadeUp delay={-0.2} distance={40}>
       <div className="py-20 min-h-screen">
         <div className="container mx-auto px-4 lg:px-10 xl:px-12 2xl:px-16">
           {/* Headings above form */}
@@ -408,6 +411,7 @@ function ContactForm({ prefillType }) {
           </div>
         </div>
       </div>
+    </FadeUp>
   );
 }
 
@@ -417,7 +421,18 @@ function Call() {
   const reason = searchParams.get('reason');
 
   React.useEffect(() => {
-    if (reason) setPrefillType(reason);
+    if (reason) {
+      setPrefillType(reason);
+      // Automatically scroll to the contact form when reason parameter is present
+      setTimeout(() => {
+        const formElement = document.getElementById('contact-form');
+        if (formElement) {
+          const elementPosition = formElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - 100;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 500); // Delay to ensure page is fully rendered
+    }
   }, [reason]);
 
   const handleScheduleClick = (type) => setPrefillType(type);

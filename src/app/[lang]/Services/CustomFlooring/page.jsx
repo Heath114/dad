@@ -8,6 +8,7 @@ import gsap from 'gsap';
 import FAQ from './Faq';
 import { useT } from '../../i18n/client';
 import { useParams } from 'next/navigation';
+import FadeUp from '../../../components/FadeUp';
 
 export default function CustomFlooring() {
   const router = useRouter();
@@ -22,6 +23,7 @@ export default function CustomFlooring() {
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       {/* HERO */}
+      <FadeUp delay={0} distance={50}>
       <div className="relative w-full h-[100vh] sm:h-[50vh] lg:h-[100vh] overflow-hidden">
         <Image
           src="/medias/safeway/2.webp"
@@ -32,83 +34,89 @@ export default function CustomFlooring() {
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-20" />
-        <div className="absolute inset-0 flex items-center justify-center text-white px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3
-              className={`mb-4 sm:mb-6 font-semibold tracking-wide ${
-                lang === 'ar'
-                  ? 'text-2xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl'
-                  : 'text-xl sm:text-1xl lg:text-3xl xl:text-4xl 2xl:text-5xl'
-              }`}
-            >
-              {t('services.custom_flooring_page.hero_title')}
-            </h3>
-            <p
-              className={`font-light ${
-                lang === 'ar'
-                  ? 'text-lg sm:text-xl lg:text-xl 2xl:text-2xl'
-                  : 'text-base sm:text-lg lg:text-xl 2xl:text-2xl'
-              }`}
-            >
-              {t('services.custom_flooring_page.hero_subtitle')}
-            </p>
+        
+          <div className="absolute inset-0 flex items-center justify-center text-white px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h3
+                className={`mb-4 sm:mb-6 font-semibold tracking-wide ${
+                  lang === 'ar'
+                    ? 'text-2xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl'
+                    : 'text-xl sm:text-1xl lg:text-3xl xl:text-4xl 2xl:text-5xl'
+                }`}
+              >
+                {t('services.custom_flooring_page.hero_title')}
+              </h3>
+              <p
+                className={`font-light ${
+                  lang === 'ar'
+                    ? 'text-lg sm:text-xl lg:text-xl 2xl:text-2xl'
+                    : 'text-base sm:text-lg lg:text-xl 2xl:text-2xl'
+                }`}
+              >
+                {t('services.custom_flooring_page.hero_subtitle')}
+              </p>
+            </div>
           </div>
-        </div>
 
         {/* CTA (kept on one line) */}
-        <div className="absolute bottom-6 sm:bottom-8 lg:bottom-10 left-1/2 -translate-x-1/2 transform text-white px-4">
-          <p
-            className={`cursor-pointer font-light underline underline-offset-8 transition-colors duration-200 hover:text-gray-400 text-center whitespace-nowrap ${
-              lang === 'ar'
-                ? 'text-base sm:text-lg lg:text-2xl'
-                : 'text-sm sm:text-base lg:text-xl'
-            }`}
-            onClick={() => router.push(`/${lang}/Contact?reason=consultation`)}
-          >
-            {t('services.custom_flooring_page.cta_free_consultation')}
-          </p>
-        </div>
+          <div className="absolute bottom-6 sm:bottom-8 lg:bottom-10 left-1/2 -translate-x-1/2 transform text-white px-4">
+            <p
+              className={`cursor-pointer font-light underline underline-offset-8 transition-colors duration-200 hover:text-gray-400 text-center whitespace-nowrap ${
+                lang === 'ar'
+                  ? 'text-base sm:text-lg lg:text-2xl'
+                  : 'text-sm sm:text-base lg:text-xl'
+              }`}
+              onClick={() => router.push(`/${lang}/Contact?reason=consultation`)}
+            >
+              {t('services.custom_flooring_page.cta_free_consultation')}
+            </p>
+          </div>
       </div>
+      </FadeUp>
+
 
       {/* INTRO */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center sm:py-24 lg:py-28 lg:min-h-screen text-center">
-        <h1
-          className={`font-semibold mb-16 sm:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 md:leading-relaxed sm:leading-relaxed leading-relaxed lg:leading-relaxed ${
-            lang === 'ar'
-              ? 'text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl'
-              : 'text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl'
-          }`}
-        >
-          {t('services.custom_flooring_page.intro_title')}
-        </h1>
-        <p
-          className={`font-light leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed mb-6 sm:mb-8 ${
-            lang === 'ar'
-              ? 'text-lg sm:text-xl lg:text-xl 2xl:text-2xl'
-              : 'text-base sm:text-lg lg:text-xl 2xl:text-2xl'
-          }`}
-        >
-          {t('services.custom_flooring_page.intro_p1')}
-        </p>
-        <p
-          className={`font-light leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed ${
-            lang === 'ar'
-              ? 'text-lg sm:text-xl lg:text-xl 2xl:text-2xl'
-              : 'text-base sm:text-lg lg:text-xl 2xl:text-2xl'
-          }`}
-        >
-          {t('services.custom_flooring_page.intro_p2')}
-        </p>
-      </div>
+      <FadeUp delay={0.1} distance={40}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center sm:py-24 lg:py-28 lg:min-h-screen text-center">
+          <h1
+            className={`font-semibold mb-16 sm:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 md:leading-relaxed sm:leading-relaxed leading-relaxed lg:leading-relaxed ${
+              lang === 'ar'
+                ? 'text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl'
+                : 'text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl'
+            }`}
+          >
+            {t('services.custom_flooring_page.intro_title')}
+          </h1>
+          <p
+            className={`font-light leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed mb-6 sm:mb-8 ${
+              lang === 'ar'
+                ? 'text-lg sm:text-xl lg:text-xl 2xl:text-2xl'
+                : 'text-base sm:text-lg lg:text-xl 2xl:text-2xl'
+            }`}
+          >
+            {t('services.custom_flooring_page.intro_p1')}
+          </p>
+          <p
+            className={`font-light leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed ${
+              lang === 'ar'
+                ? 'text-lg sm:text-xl lg:text-xl 2xl:text-2xl'
+                : 'text-base sm:text-lg lg:text-xl 2xl:text-2xl'
+            }`}
+          >
+            {t('services.custom_flooring_page.intro_p2')}
+          </p>
+        </div>
+      </FadeUp>
 
       {/* TWO PANELS */}
-      <div className="flex flex-col lg:flex-row justify-center items-center">
-        {/* Panel 1 */}
-        <div
-          className="w-full h-[50vh] sm:h-[60vh] lg:w-[960px] lg:h-[100vh] relative overflow-hidden group cursor-pointer"
-          onMouseEnter={() => setIsHovered('first')}
-          onMouseLeave={() => setIsHovered(null)}
-        >
+      <FadeUp delay={0.125} distance={50}>
+        <div className="flex flex-col lg:flex-row justify-center items-center">
+          {/* Panel 1 */}
+          <div
+            className="w-full h-[50vh] sm:h-[60vh] lg:w-[960px] lg:h-[100vh] relative overflow-hidden group cursor-pointer"
+            onMouseEnter={() => setIsHovered('first')}
+            onMouseLeave={() => setIsHovered(null)}
+          >
           <div className="absolute inset-0 bg-gray-800">
             <div
               className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
@@ -237,33 +245,38 @@ export default function CustomFlooring() {
           <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-4 sm:left-6 lg:left-8 w-6 h-6 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-gray-400 opacity-20 group-hover:opacity-40 group-hover:scale-125 transition-all duration-500" />
         </div>
       </div>
+      </FadeUp>
 
       {/* FAQ */}
-        <FAQ />
+        <FadeUp delay={0} distance={40}>
+          <FAQ />
+        </FadeUp>
+
       {/* PROJECT CARDS — fixed for mobile */}
-      <div className="py-16 sm:py-24 lg:py-32">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-30 text-center">
-          <div>
-            <h2
-              className={` ${
-                lang === 'ar'
-                  ? 'text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl'
-                  : 'text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl'
-              } text-gray-900 font-semibold mb-4`}
-            >
-              {t('services.custom_flooring_page.projects_title')}
-            </h2>
-            <p
-              className={`${
-                lang === 'ar'
-                  ? 'text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl'
-                  : 'text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'
-              } text-gray-900 font-350 lg:mb-8 mb-4`}
-            >
-              {t('services.custom_flooring_page.projects_subtitle')}
-            </p>
+      <FadeUp delay={0} distance={40}>
+        <div className="py-16 sm:py-24 lg:py-32">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-30 text-center">
+            <div>
+              <h2
+                className={` ${
+                  lang === 'ar'
+                    ? 'text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl'
+                    : 'text-xl sm:text-2xl lg:text-3xl 2xl:text-4xl'
+                } text-gray-900 font-semibold mb-4`}
+              >
+                {t('services.custom_flooring_page.projects_title')}
+              </h2>
+              <p
+                className={`${
+                  lang === 'ar'
+                    ? 'text-base sm:text-lg lg:text-lg xl:text-xl 2xl:text-2xl'
+                    : 'text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl'
+                } text-gray-900 font-350 lg:mb-8 mb-4`}
+              >
+                {t('services.custom_flooring_page.projects_subtitle')}
+              </p>
+            </div>
           </div>
-        </div>
 
         {/* Use grid: 1 col on mobile, 3 cols on sm+ */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 lg:mb-16 px-4 sm:px-8 lg:px-12">
@@ -421,6 +434,7 @@ export default function CustomFlooring() {
           </div>
         </div>
       </div>
+      </FadeUp>
     </div>
   );
 }

@@ -23,6 +23,8 @@ export default function SurfaceFinishing() {
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       {/* HERO */}
+     <FadeUp delay={0} distance={50}>
+
       <div className="relative w-full h-[100vh] sm:h-[50vh] lg:h-[100vh] overflow-hidden">
         <Image
           src="/medias/movenpick/4.webp"
@@ -73,8 +75,12 @@ export default function SurfaceFinishing() {
           </p>
         </div>
       </div>
+      </FadeUp>
+
 
       {/* INTRO */}
+     <FadeUp delay={0.1} distance={40}>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center sm:py-24 lg:py-28 lg:min-h-screen text-center">
         <h1
           className={`font-semibold mb-16 sm:mb-12 lg:mb-16 xl:mb-20 2xl:mb-24 md:leading-relaxed sm:leading-relaxed leading-relaxed lg:leading-relaxed ${
@@ -106,8 +112,12 @@ export default function SurfaceFinishing() {
           {t('services.surface_finishing_page.intro_p2')}
         </p>
       </div>
+      </FadeUp>
+
 
       {/* TWO PANELS */}
+     <FadeUp delay={0.125} distance={50}>
+
       <div className="flex flex-col lg:flex-row justify-center items-center">
         {/* Panel 1 */}
         <div
@@ -252,11 +262,18 @@ export default function SurfaceFinishing() {
           </div>
         </div>
       </div>
+     </FadeUp>
+
 
       {/* FAQ */}
-        <FAQ />
+      <FadeUp delay={0} distance={40}>
+          <FAQ />
+        </FadeUp>
+
 
       {/* PROJECT CARDS — fixed for mobile */}
+          <FadeUp delay={0} distance={40}>
+
       <div className="py-16 sm:py-24 lg:py-32">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 text-center">
           <div>
@@ -437,6 +454,7 @@ export default function SurfaceFinishing() {
           </div>
         </div>
       </div>
+    </FadeUp>
     </div>
   );
 }

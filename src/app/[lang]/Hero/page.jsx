@@ -41,6 +41,7 @@ export default function Hero(){
     const navbarHeight = 80; // Adjust based on your navbar height
     return(
         <>  
+            <FadeUp delay={0} distance={0}>
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="h-screen w-full relative overflow-hidden">
                 <Image
@@ -53,7 +54,9 @@ export default function Hero(){
             </div>
 
             </div>
+            </FadeUp>
             {/* Hero Section */}
+            <FadeUp delay={0.05} distance={40}>
                 <div className="py-32 text-left sm:py-20 md:py-24 lg:py-32 xl:py-36 2xl:py-52 flex items-center justify-center px-4 sm:px-6 lg:px-8">
                     <div className="max-w-full sm:max-w-4xl lg:max-w-6xl mx-auto text-center">
                         <h1 className={`font-semibold leading-tight text-gray-800`}
@@ -99,8 +102,10 @@ export default function Hero(){
                         </p>
                     </div>
                 </div>
+            </FadeUp>
 
             {/* Image Cards Section - Mobile: Stack, Desktop: Side by side */}
+            <FadeUp delay={0.1} distance={40}>
                 <div className="flex flex-col lg:flex-row justify-center items-center min-h-[100vh]">
                 {/* First Image Container */}
                 <div className="w-full h-[50vh] sm:h-[60vh] lg:w-[960px] lg:h-[100vh] relative overflow-hidden"
@@ -203,8 +208,10 @@ export default function Hero(){
                     </div>
                 </div>
             </div>
+            </FadeUp>
 
             {/* Expertise Section */}
+            <FadeUp delay={0.125} distance={40}>
                 <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8  md:min-h-[80vh] lg:min-h-[100vh] py-20 sm:py-16 lg:py-40">
                     <div className="max-w-full sm:max-w-4xl lg:max-w-5xl mx-auto text-center">
                         <h1 className={`font-semibold text-gray-800 leading-tight mb-12 sm:mb-16 lg:mb-20 mt-0 text-2xl sm:text-3xl lg:text-4xl`}>
@@ -228,8 +235,10 @@ export default function Hero(){
                         </p>
                     </div>
                 </div>
+            </FadeUp>
 
                 {/* Special Offers Images Section */}
+                <FadeUp delay={0.15} distance={40}>
                 <div className="flex flex-col lg:flex-row justify-center items-center min-h-[100vh]">
                     <div 
                         className="w-full h-[50vh] sm:h-[60vh] lg:w-[960px] lg:h-[100vh] relative overflow-hidden"
@@ -279,7 +288,7 @@ export default function Hero(){
                             <p 
                             className={`font-light underline underline-offset-8 cursor-pointer hover:text-gray-300 transition-colors drop-shadow-lg whitespace-nowrap ${lang === 'ar' ? 'text-sm sm:text-lg lg:text-2xl' : 'text-xs sm:text-base lg:text-2xl'}`}
                             style={{textShadow: '1px 1px 3px rgba(0,0,0,0.4)'}}
-                            onClick={() => router.push(`/${lang}/Contact`)}
+                            onClick={() => router.push(`/${lang}/Contact?reason=consultation`)}
                             >
                                 {t("heroPage.offer.cta")}
                             </p>
@@ -344,8 +353,10 @@ export default function Hero(){
                 </div>
 
             </div>
+            </FadeUp>
 
             {/* Partners Section */}
+            <FadeUp delay={0.175} distance={40}>
             <div className="min-h-[100vh] sm:min-h-[100vh] md:min-h-[100vh] lg:min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-10 py-32 sm:py-30 md:py-40 lg:py-32 mt-0 sm:mt-0 lg:mt-0">
             <div className="max-w-7xl text-center">
 
@@ -609,6 +620,7 @@ export default function Hero(){
                 </div>
             </div>
             </div>
+            </FadeUp>
 
             {/* Autograph Section - insert hand-drawn animation for Rami's signature*/}
 

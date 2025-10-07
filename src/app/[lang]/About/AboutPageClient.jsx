@@ -17,6 +17,7 @@ export default function AboutPageClient() {
     <div className="bg-white">
       <div className="py-6 sm:py-20 md:py-24 lg:py-16">
         {/* Hero Section */}
+        <FadeUp delay={0} distance={40}>
           <section className="max-w-5xl flex justify-center flex-col text-center items-center px-6 sm:px-6 py-8 sm:py-10 mx-auto max-w-full">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-4 sm:mb-6 text-gray-800 leading-tight">
               {t('about.hero.title')}
@@ -35,8 +36,10 @@ export default function AboutPageClient() {
               }}
             />
           </section>
+        </FadeUp>
 
         {/* Image Section */}
+        <FadeUp delay={0.1} distance={30}>
           <section className="max-w-5xl mx-auto px-4 sm:px-6 mb-16 sm:mb-20 lg:mb-24">
             <Image
               src="/medias/abdounbridge/mm.webp"
@@ -48,9 +51,11 @@ export default function AboutPageClient() {
               priority
             />
           </section>
+        </FadeUp>
       </div>
 
       {/* Vision Section */}
+      <FadeUp delay={0.2} distance={40}>
         <section className="bg-gray-50 py-16 sm:py-20 md:py-32 lg:py-40">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             {/* Desktop unchanged: lg:text-4xl */}
@@ -65,8 +70,9 @@ export default function AboutPageClient() {
             </div>
           </div>
         </section>
+      </FadeUp>
       
-      
+      <FadeUp delay={0.3} distance={40}>
       <div className="py-16 sm:py-16">
         <StrengthSection
           translation={{
@@ -80,8 +86,10 @@ export default function AboutPageClient() {
           }}
         />
         </div>
+      </FadeUp>
 
       {/* Location Section */}
+      <FadeUp delay={0.4} distance={40}>
         <section className="bg-gray-50 py-12 sm:py-16">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             {/* Desktop unchanged: lg:text-4xl */}
@@ -105,6 +113,7 @@ export default function AboutPageClient() {
             />
           </div>
         </section>
+      </FadeUp>
 
     </div>
   );

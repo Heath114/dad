@@ -101,36 +101,60 @@ export default function ProjectsPageClient() {
 
       {/* Category Filter Buttons */}
         <div className="min-h-[100vh]">
-          <p className="pt-12 sm:pt-20 lg:pt-20 xl:pt-28 2xl:pt-30 text-2xl sm:text-3xl lg:text-4xl text-center px-4">{t('projects.title')}</p>
+          <FadeUp delay={0} distance={40}>
+            <p className="pt-12 sm:pt-20 lg:pt-20 xl:pt-28 2xl:pt-30 text-2xl sm:text-3xl lg:text-4xl text-center px-4">{t('projects.title')}</p>
+          </FadeUp>
           
           {/* Mobile: 2 filters per line */}
-          <div className="sm:hidden px-4 mt-8">
-            <div className={`grid grid-cols-2 gap-3 ${lang === 'ar' ? 'text-right' : 'text-left'}`} style={{ direction: lang === 'ar' ? 'rtl' : 'ltr' }}>
-            {mobileCategories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setFilter(category)}
-                className={`text-base font-400 transition-colors duration-300 py-2 px-3 text-center rounded-lg border ${
-                  filter === category
-                    ? 'text-white bg-black border-black'
-                    : 'text-black bg-white border-gray-300 hover:bg-gray-50'
-                }`}
-              >
-                {t(`projects.categories.${category}`)}
-              </button>
-            ))}
+          <FadeUp delay={0.1} distance={30}>
+            <div className="sm:hidden px-4 mt-8">
+              <div className={`grid grid-cols-2 gap-3 ${lang === 'ar' ? 'text-right' : 'text-left'}`} style={{ direction: lang === 'ar' ? 'rtl' : 'ltr' }}>
+              {mobileCategories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setFilter(category)}
+                  className={`text-base font-400 transition-colors duration-300 py-2 px-3 text-center rounded-lg border ${
+                    filter === category
+                      ? 'text-white bg-black border-black'
+                      : 'text-black bg-white border-gray-300 hover:bg-gray-50'
+                  }`}
+                >
+                  {t(`projects.categories.${category}`)}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+          </FadeUp>
 
-        {/* Tablet: Wrap on small screens */}
-        <div className={`hidden sm:flex lg:hidden flex-wrap gap-4 text-lg font-400 px-6 mt-12 justify-center ${lang === 'ar' ? 'flex-row-reverse' : ''}`}>
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setFilter(category)}
-              className={`transition-colors duration-300 ${
-                filter === category
-                  ? 'text-black underline underline-offset-4'
+          {/* Tablet: Wrap on small screens */}
+          <FadeUp delay={0.1} distance={30}>
+            <div className={`hidden sm:flex lg:hidden flex-wrap gap-4 text-lg font-400 px-6 mt-12 justify-center ${lang === 'ar' ? 'flex-row-reverse' : ''}`}>
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setFilter(category)}
+                  className={`transition-colors duration-300 ${
+                    filter === category
+                      ? 'text-black underline underline-offset-4'
+                      : 'text-black hover:text-gray-400'
+                  }`}
+                >
+                  {t(`projects.categories.${category}`)}
+                </button>
+              ))}
+            </div>
+          </FadeUp>
+
+          {/* Desktop: Original Layout (UNCHANGED) */}
+          <FadeUp delay={0.1} distance={30}>
+            <div className={`hidden lg:flex gap-8 text-xl font-400 px-12 mt-16 ${lang === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setFilter(category)}
+                  className={`transition-colors duration-300 ${
+                    filter === category
+                      ? 'text-black underline underline-offset-4 '
                   : 'text-black hover:text-gray-400'
               }`}
             >
@@ -138,33 +162,19 @@ export default function ProjectsPageClient() {
             </button>
           ))}
         </div>
-
-        {/* Desktop: Original Layout (UNCHANGED) */}
-        <div className={`hidden lg:flex gap-8 text-xl font-400 px-12 mt-16 ${lang === 'ar' ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setFilter(category)}
-              className={`transition-colors duration-300 ${
-                filter === category
-                  ? 'text-black underline underline-offset-4 '
-                  : 'text-black hover:text-gray-400'
-              }`}
-            >
-              {t(`projects.categories.${category}`)}
-            </button>
-          ))}
-        </div>
+        </FadeUp>
         
-        <hr className="border-t border-gray-500 mx-4 sm:mx-6 lg:mx-12 my-4" />
+        <FadeUp delay={0.15} distance={20}>
+          <hr className="border-t border-gray-500 mx-4 sm:mx-6 lg:mx-12 my-4" />
+        </FadeUp>
 
 
         {/* Projects Grid */}
         <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-10 lg:py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
             {filteredProjects.map((project, index) => (
+              <FadeUp key={index} delay={index * 0.1 + 0.2} distance={50}>
               <div
-                key={index}
                 className="relative group h-[250px] sm:h-[280px] lg:h-[300px] overflow-hidden cursor-pointer shadow-lg hover:shadow-xl transition-all duration-500 rounded-lg border"
                 onClick={() => router.push(project.link)}
               >
@@ -237,6 +247,7 @@ export default function ProjectsPageClient() {
                   </div>
                 </div>
               </div>
+              </FadeUp>
             ))}
           </div>
         </div>

@@ -123,7 +123,11 @@ export default function ContactButton({ show }) {
                   </p>
                   <div className="flex justify-center">
                   <button
-                    onClick={() => router.push(`/${lang}/Contact`)}
+                    onClick={() => {
+                      // Navigate to Contact page with consultation pre-fill
+                      router.push(`/${lang}/Contact?reason=consultation`);
+                      setOpen(false);
+                    }}
                     className="px-6 sm:px-8 py-2 text-sm sm:text-base rounded-full bg-[#2b2b2b] text-white hover:bg-green-500 transition-all duration-300"
                   >
                     {`${lang === 'ar' ? 'طلب استشارة' : 'Request a Consultation'}`}

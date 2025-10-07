@@ -150,7 +150,7 @@ function ParallaxText() {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              router.push(`/${lang}/Contact`);
+              router.push(`/${lang}/Contact?reason=general`);
             }}
           >
             {t('contact1.cta.button_text')}
