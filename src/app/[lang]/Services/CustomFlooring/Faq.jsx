@@ -184,7 +184,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="py-12 sm:py-16 lg:py-24 bg-white" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+    <div className="py-20 sm:py-24 lg:py-28 xl:py-36 2xl:py-40 bg-white" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           ref={containerRef}

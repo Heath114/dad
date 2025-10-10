@@ -266,7 +266,7 @@ export default function SurfaceFinishing() {
 
 
       {/* FAQ */}
-      <FadeUp delay={0} distance={40}>
+        <FadeUp delay={0} distance={40}>
           <FAQ />
         </FadeUp>
 
