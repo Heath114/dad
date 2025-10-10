@@ -254,7 +254,7 @@ export default function CustomFlooring() {
 
       {/* PROJECT CARDS — fixed for mobile */}
       <FadeUp delay={0} distance={40}>
-        <div className="py-16 sm:py-24 lg:py-32">
+        <div className="py-12 sm:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-30 text-center">
             <div>
               <h2
@@ -279,7 +279,7 @@ export default function CustomFlooring() {
           </div>
 
         {/* Use grid: 1 col on mobile, 3 cols on sm+ */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12 lg:mb-16 px-4 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-8 lg:px-12">
           {/* Card 1 */}
           <div
             className="relative h-[220px] sm:h-[220px] lg:h-[260px] overflow-hidden cursor-pointer rounded-lg"
